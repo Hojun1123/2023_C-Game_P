@@ -3,6 +3,9 @@
 #include "Helper.h"
 #include "Map.h"
 #include "Player.h"
+
+bool TEST = true;
+#include "1112.h"
 using namespace std;
 
 
@@ -46,6 +49,12 @@ void HandleMove()
 
 int main()
 {
+
+	if (TEST)
+	{
+		test();
+		return 1;
+	}
 	SetCursorOnOff(false);
 	
 	MovePlayer(3, 2);
